@@ -246,6 +246,9 @@ button:hover {
     margin-bottom: 1rem;
 }
 
+#txtNome{
+    font-size: 1rem;
+}
 @media (max-width: 1000px) {
     #sobre {
         flex-direction: column-reverse;

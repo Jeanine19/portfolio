@@ -3,6 +3,8 @@ const email = document.querySelector("#email");
 
 let nomeOk = false;
 let emailOk = false;
+let mensagemOk = false;
+let cepOk = false;
 
 function validarNome() {
     let txtNome = document.querySelector("#txtNome");
@@ -72,4 +74,8 @@ function validarEmailregEx() {
           jsonBody.uf;
       }
     })
+    .catch((error) => {
+      alert("CEP não encontrado!");
+    });
+   
 }
